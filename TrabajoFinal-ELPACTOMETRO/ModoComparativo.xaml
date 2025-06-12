@@ -1,0 +1,113 @@
+﻿<Window x:Class="TrabajoFinal_ELPACTOMETRO.ModoComparativo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrabajoFinal_ELPACTOMETRO"
+        mc:Ignorable="d"
+        Title="Comparativo" Height="600" Width="500" WindowStyle="None" 
+        Background="Transparent" MouseDown="Window_MouseDown" 
+        AllowsTransparency="True">
+    
+    <Border BorderBrush="{StaticResource BordeVentanas}" BorderThickness="2"
+        Background="{StaticResource FondoVentanaComparativa}"
+        CornerRadius="3">
+
+        <Grid x:Name="ventanaPrincipal">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="115*" />
+            </Grid.RowDefinitions>
+
+            <!-- Barra lateral -->
+
+            <Border Name="barraTitulo" Grid.Row="0" Grid.ColumnSpan="2" Background="{StaticResource FondoVentanaLateral1}">
+
+                <Grid Background="Transparent">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="40"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Name="ButtonMinimize" Background="Transparent" Grid.Column="2" BorderBrush="Transparent" Click="ButtonMinimizeMC_Click">
+                        <Image Source="/Imagenes/minus-sign.png" Stretch="Uniform" VerticalAlignment="Center" Width="20" Height="20"/>
+                    </Button>
+
+                    <Button Name="ButtonFScreen" Background="Transparent" Grid.Column="3" BorderBrush="Transparent" Click="ButtonFScreenMC_Click">
+                        <Image Source="/Imagenes/maximize.png" Stretch="Uniform" VerticalAlignment="Center" Width="20" Height="20"/>
+                    </Button>
+
+                    <Button Name="ButtonClose" Background="Transparent" Grid.Column="4" BorderBrush="Transparent" Click="ButtonCloseMC_Click">
+                        <Image Source="/Imagenes/cancel.png" Stretch="Uniform" VerticalAlignment="Center" Width="20" Height="20"/>
+                    </Button>
+
+                </Grid>
+
+            </Border>
+
+            <!-- Sección listas + botones de comparación -->
+
+            <Border Name="gridBotonesComparar" Grid.Row="1">
+
+                <Grid Background="Transparent">
+                    
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="200"/>
+                    </Grid.RowDefinitions>
+
+                    <ListView Name="TablaProcesosSeleccion" Margin="10,10,10,10" FontFamily="Georgia" 
+                              ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.Row="1" Grid.ColumnSpan="2" 
+                              SelectionChanged="TablaProcesosSeleccion_SelectionChanged">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn  Width="250" DisplayMemberBinding="{Binding NombreProceso}">
+                                    <GridViewColumnHeader Tag="nombrePro" HorizontalAlignment="Left"
+                                                 Content="TIPO DE PROCESO" Name="tipoProceso"/>
+                                </GridViewColumn>
+                                <GridViewColumn Width="250" DisplayMemberBinding="{Binding FechaProceso}">
+                                    <GridViewColumnHeader Tag="fechaPro" HorizontalAlignment="Left"
+                                                Content="FECHA" Name="fechaProcesos"/>
+                                </GridViewColumn>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+
+                    <ListView Name="TablaProcesosSalida" Margin="10,10,10,10" FontFamily="Georgia" 
+                              ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.Row="4" Grid.ColumnSpan="2" 
+                              SelectionChanged="TablaProcesosSalida_SelectionChanged">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn  Width="250" DisplayMemberBinding="{Binding NombreProceso}">
+                                    <GridViewColumnHeader Tag="nombrePro" HorizontalAlignment="Left"
+                                                          Content="TIPOS DE PROCESO" Name="tipoProcesoAComparar"/>
+                                </GridViewColumn>
+                                <GridViewColumn Width="250" DisplayMemberBinding="{Binding FechaProceso}">
+                                    <GridViewColumnHeader Tag="fechaPro" HorizontalAlignment="Left"
+                                                          Content="FECHA" Name="fechaProcesosAComparar"/>
+                                </GridViewColumn>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+
+                    <TextBlock Text="SELECCIONE LOS PROCESOS QUE QUIERE COMPARAR" FontSize="15" FontFamily="Georgia" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="0" />
+                    <TextBlock Text="LISTA DE PROCESOS PARA COMPARAR" FontSize="15" FontFamily="Georgia" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="3" />
+
+                    <Button x:Name="AgregarSeleccion" Content="AGREGAR SELECCION" Width="150" Height ="50" Grid.Row="2" HorizontalAlignment="Left" Margin="10" IsEnabled="False" Click="AgregarSeleccion_Click"/>
+                    <Button x:Name="EliminarSeleccion" Content="ELIMINAR SELECCION" Width="150" Height ="50" Grid.Row="2" HorizontalAlignment="Center" Margin="10" IsEnabled="False" Click="EliminarSeleccion_Click"/>
+                    <Button x:Name="GenerarGrafico" Content="GENERAR GRÁFICO" Width="150" Height ="50" Grid.Row="2" HorizontalAlignment="Right" Margin="10" IsEnabled="False" Click="GenerarGrafico_Click"/>
+
+
+                </Grid>
+            </Border>
+
+        </Grid>
+    </Border>
+</Window>

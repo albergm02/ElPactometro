@@ -1,0 +1,94 @@
+﻿<Window x:Class="TrabajoFinal_ELPACTOMETRO.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrabajoFinal_ELPACTOMETRO"
+        mc:Ignorable="d"
+        Title="Graficos" Height="700" Width="1000" WindowStyle="None" Background="Transparent"
+        AllowsTransparency="True" Icon="/Imagenes/iconoPrincipal.png"
+        MouseDown="Window_MouseDown" 
+        WindowStartupLocation="CenterScreen">
+
+
+    <Border BorderBrush="{StaticResource BordeVentanas}" BorderThickness="2"
+            Background="{StaticResource FondoVentanas}"
+            CornerRadius="3">
+
+        <Grid x:Name="ventanaPrincipal">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="115*" />
+            </Grid.RowDefinitions>
+
+            <!-- Barra lateral -->
+
+            <Border Name="barraTitulo" Grid.Row="0" Grid.ColumnSpan="2" Background="{StaticResource FondoVentanaLateral1}">
+
+                <Grid Background="Transparent">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="40"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="ButtonMinimize" Background="Transparent" Grid.Column="2" BorderBrush="Transparent" Click="ButtonMinimize_Click">
+                        <Image Source="/Imagenes/minus-sign.png" Stretch="Uniform" VerticalAlignment="Center" Width="20" Height="20"/>
+                    </Button>
+
+                    <Button x:Name="ButtonFScreen" Background="Transparent" Grid.Column="3" BorderBrush="Transparent" Click="ButtonFScreen_Click">
+                        <Image Source="/Imagenes/maximize.png" Stretch="Uniform" VerticalAlignment="Center" Width="20" Height="20"/>
+                    </Button>
+
+                    <Button x:Name="ButtonClose" Background="Transparent" Grid.Column="4" BorderBrush="Transparent" Click="ButtonClose_Click">
+                        <Image Source="/Imagenes/cancel.png" Stretch="Uniform" VerticalAlignment="Center" Width="20" Height="20"/>
+                    </Button>
+
+                    <Button x:Name="ButtonOpenSW" Background="Transparent"  Grid.Column="0" BorderBrush="Transparent" 
+                            Click="ButtonOpenSW_Click" Content="ABRIR VENTANA TABLAS" Foreground="Black" IsEnabled="True">
+                    </Button>
+
+
+                </Grid>
+
+            </Border>
+
+            <!-- Sección gráfico -->
+
+            <Border Name="ventanaGrafico" Grid.Row="1" Background="{StaticResource FondoGraficos}" Margin="10">
+                <Grid Name="GridGrafico">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock x:Name="tituloProceso" Grid.Row="2" Grid.Column="1" FontSize="15" 
+                               FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                    
+
+                    <ScrollViewer  HorizontalScrollBarVisibility="Auto" 
+                                   VerticalScrollBarVisibility="Disabled" 
+                                   Name="ScrollBarras" Grid.Row="2"
+                                   Grid.Column="1">
+ 
+                        <StackPanel Name="StackBarras" Orientation="Horizontal" 
+                                    HorizontalAlignment="Center" Grid.Row="1"/>
+
+                    </ScrollViewer>
+                </Grid>
+            </Border>
+            
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Pactometro>
+  <Procesos>
+    <Proceso nombreProceso="ELECCIONES GENERALES" fechaProceso="2023/07/23">
+      <partidos>
+        <partido escañosPartido="136" nombrePartido="PP"></partido>
+        <partido escañosPartido="122" nombrePartido="PSOE"></partido>
+        <partido escañosPartido="33" nombrePartido="VOX"></partido>
+        <partido escañosPartido="31" nombrePartido="SUMAR"></partido>
+        <partido escañosPartido="7" nombrePartido="ERC"></partido>
+        <partido escañosPartido="7" nombrePartido="JUNTS"></partido>
+        <partido escañosPartido="6" nombrePartido="EH_BILDU"></partido>
+        <partido escañosPartido="5" nombrePartido="EAJ_PNV"></partido>
+        <partido escañosPartido="1" nombrePartido="BNG"></partido>
+        <partido escañosPartido="1" nombrePartido="CCA"></partido>
+        <partido escañosPartido="1" nombrePartido="UPN"></partido>
+      </partidos>
+    </Proceso>
+    <Proceso nombreProceso="ELECCIONES GENERALES" fechaProceso="2019/11/10">
+      <partidos>
+        <partido escañosPartido="120" nombrePartido="PSOE"></partido>
+        <partido escañosPartido="89" nombrePartido="PP"></partido>
+        <partido escañosPartido="52" nombrePartido="VOX"></partido>
+        <partido escañosPartido="35" nombrePartido="PODEMOS"></partido>
+        <partido escañosPartido="13" nombrePartido="ERC"></partido>
+        <partido escañosPartido="10" nombrePartido="CS"></partido>
+        <partido escañosPartido="8" nombrePartido="JUNTS"></partido>
+        <partido escañosPartido="6" nombrePartido="EAJ_PNV"></partido>
+        <partido escañosPartido="5" nombrePartido="EH_BILDU"></partido>
+        <partido escañosPartido="3" nombrePartido="MASPAIS"></partido>
+        <partido escañosPartido="2" nombrePartido="CUP_PR"></partido>
+        <partido escañosPartido="2" nombrePartido="CCA"></partido>
+        <partido escañosPartido="1" nombrePartido="BNG"></partido>
+        <partido escañosPartido="4" nombrePartido="OTROS"></partido>
+      </partidos>
+    </Proceso>
+    <Proceso nombreProceso="ELECCIONES AUTONÓMICAS" fechaProceso="2022/02/14">
+      <partidos>
+        <partido escañosPartido="31" nombrePartido="PP"></partido>
+        <partido escañosPartido="28" nombrePartido="PSOE"></partido>
+        <partido escañosPartido="13" nombrePartido="VOX"></partido>
+        <partido escañosPartido="3" nombrePartido="UPL"></partido>
+        <partido escañosPartido="3" nombrePartido="SY"></partido>
+        <partido escañosPartido="1" nombrePartido="PODEMOS"></partido>
+        <partido escañosPartido="1" nombrePartido="CS"></partido>
+        <partido escañosPartido="1" nombrePartido="XAV"></partido>
+      </partidos>
+    </Proceso>
+    <Proceso nombreProceso="ELECCIONES AUTONÓMICAS" fechaProceso="2019/05/26">
+      <partidos>
+        <partido escañosPartido="35" nombrePartido="PSOE"></partido>
+        <partido escañosPartido="29" nombrePartido="PP"></partido>
+        <partido escañosPartido="12" nombrePartido="CS"></partido>
+        <partido escañosPartido="2" nombrePartido="PODEMOS"></partido>
+        <partido escañosPartido="1" nombrePartido="VOX"></partido>
+        <partido escañosPartido="1" nombrePartido="UPL"></partido>
+        <partido escañosPartido="1" nombrePartido="XAV"></partido>
+      </partidos>
+    </Proceso>
+  </Procesos>
+</Pactometro>

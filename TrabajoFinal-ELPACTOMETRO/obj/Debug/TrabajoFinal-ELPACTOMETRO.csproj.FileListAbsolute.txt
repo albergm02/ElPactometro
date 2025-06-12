@@ -1,0 +1,54 @@
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\bin\Debug\TrabajoFinal-ELPACTOMETRO.exe.config
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\bin\Debug\TrabajoFinal-ELPACTOMETRO.exe
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\bin\Debug\TrabajoFinal-ELPACTOMETRO.pdb
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\TrabajoFinal-ELPACTOMETRO.csproj.AssemblyReference.cache
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\MainWindow.g.cs
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\App.g.cs
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\TrabajoFinal-ELPACTOMETRO_MarkupCompile.cache
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\TrabajoFinal-ELPACTOMETRO_MarkupCompile.lref
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\App.baml
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\MainWindow.baml
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\TrabajoFinal-ELPACTOMETRO.g.resources
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\TrabajoFinal_ELPACTOMETRO.Properties.Resources.resources
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\TrabajoFinal-ELPACTOMETRO.csproj.GenerateResource.cache
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\TrabajoFinal-ELPACTOMETRO.csproj.CoreCompileInputs.cache
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\TrabajoFinal-ELPACTOMETRO.exe
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\TrabajoFinal-ELPACTOMETRO.pdb
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\SecondWindow.g.cs
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\SecondWindow.baml
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\Estilos\Colores.baml
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\ModoComparativo.g.cs
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\ModoComparativo.baml
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\ModoPactometro.g.cs
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\ModoPactometro.baml
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\AñadirProceso.g.cs
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\AñadirProceso.baml
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\AñadirPartido.g.cs
+C:\Users\alber\Desktop\INTERFACES\TrabajoFinal-ELPACTOMETRO\obj\Debug\AñadirPartido.baml
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\bin\Debug\TrabajoFinal-ELPACTOMETRO.exe.config
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\bin\Debug\TrabajoFinal-ELPACTOMETRO.exe
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\bin\Debug\TrabajoFinal-ELPACTOMETRO.pdb
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\TrabajoFinal-ELPACTOMETRO.csproj.AssemblyReference.cache
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\Estilos\Colores.baml
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\AñadirPartido.g.cs
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\AñadirProceso.g.cs
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\MainWindow.g.cs
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\ModoComparativo.g.cs
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\ModoPactometro.g.cs
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\SecondWindow.g.cs
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\App.g.cs
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\TrabajoFinal-ELPACTOMETRO_MarkupCompile.cache
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\TrabajoFinal-ELPACTOMETRO_MarkupCompile.lref
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\App.baml
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\AñadirPartido.baml
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\AñadirProceso.baml
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\MainWindow.baml
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\ModoComparativo.baml
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\ModoPactometro.baml
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\SecondWindow.baml
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\TrabajoFinal-ELPACTOMETRO.g.resources
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\TrabajoFinal_ELPACTOMETRO.Properties.Resources.resources
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\TrabajoFinal-ELPACTOMETRO.csproj.GenerateResource.cache
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\TrabajoFinal-ELPACTOMETRO.csproj.CoreCompileInputs.cache
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\TrabajoFinal-ELPACTOMETRO.exe
+C:\Users\alber\Desktop\Alberto García Martín - IGU\TrabajoFinal-ELPACTOMETRO\obj\Debug\TrabajoFinal-ELPACTOMETRO.pdb

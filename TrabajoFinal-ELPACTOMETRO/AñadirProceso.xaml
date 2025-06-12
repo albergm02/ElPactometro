@@ -1,0 +1,85 @@
+﻿<Window x:Class="TrabajoFinal_ELPACTOMETRO.AñadirProceso"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrabajoFinal_ELPACTOMETRO"
+        mc:Ignorable="d" WindowStyle="None" Background="Transparent" MouseDown="Window_MouseDown" 
+        AllowsTransparency="True" Title="AñadirProceso" Height="250" Width="350">
+    
+    <Border BorderBrush="{StaticResource BordeVentanas}" BorderThickness="2"
+        Background="{StaticResource FondoVentanas}"
+        CornerRadius="3">
+        
+
+        <Grid x:Name="ventanaPrincipal">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="70" />
+            </Grid.RowDefinitions>
+
+            <!-- Barra lateral -->
+
+            <Border Name="barraTitulo" Grid.Row="0" Grid.ColumnSpan="2" Background="{StaticResource FondoVentanaLateral1}">
+
+                <Grid Background="Transparent">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="40"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="ButtonAPMinimize" Background="Transparent" Grid.Column="3" BorderBrush="Transparent" Click="ButtonAPMinimize_Click">
+                        <Image Source="/Imagenes/minus-sign.png" Stretch="Uniform" VerticalAlignment="Center" Width="20" Height="20"/>
+                    </Button>
+
+                    <Button x:Name="ButtonAPClose" Background="Transparent" Grid.Column="4" BorderBrush="Transparent" Click="ButtonAPClose_Click">
+                        <Image Source="/Imagenes/cancel.png" Stretch="Uniform" VerticalAlignment="Center" Width="20" Height="20"/>
+                    </Button>
+
+                </Grid>
+
+            </Border>
+
+            <!-- Sección botones para añadir -->
+
+            <Border x:Name="bordeAñadir" Grid.Row="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <DatePicker Grid.ColumnSpan="2" Name="PickerFecha" VerticalAlignment="Center" Margin="10"/>
+                    <ComboBox Name="NombreProceso" Grid.Row="2" Margin="20">
+                        <ComboBoxItem Background="Aquamarine" Foreground="Black" Content="ELECCIONES GENERALES" />
+                        <ComboBoxItem Background="LightBlue" Foreground="Black" Content="ELECCIONES AUTONÓMICAS" />
+                    </ComboBox>
+
+                </Grid>
+            </Border>
+
+            <!-- Sección botones confirmación -->
+
+            <Border x:Name="bordeBotones" Grid.Row="2">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="Confirmar" Grid.Column="0" Click="Confirmar_Click"  Margin="10"
+                        Content="Confirmar" IsDefault="True"/>
+                    <Button x:Name="Cancelar" Grid.Column="1" Click="Cancelar_Click"  Margin="10"
+                        Content="Cancelar" IsCancel="True"/>
+
+                </Grid>
+            </Border>
+
+        </Grid>
+    </Border>
+</Window>

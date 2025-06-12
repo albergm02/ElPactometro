@@ -1,0 +1,99 @@
+﻿<Window x:Class="TrabajoFinal_ELPACTOMETRO.AñadirPartido"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrabajoFinal_ELPACTOMETRO"
+        mc:Ignorable="d" WindowStyle="None" Background="Transparent" MouseDown="Window_MouseDown"
+        Title="AñadirPartido" Height="300" Width="300">
+    <Border BorderBrush="{StaticResource BordeVentanas}" BorderThickness="2"
+    Background="{StaticResource FondoVentanas}"
+    CornerRadius="3">
+
+        <Grid x:Name="ventanaPrincipal">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="70" />
+            </Grid.RowDefinitions>
+
+            <!-- Barra lateral -->
+
+            <Border Name="barraTitulo" Grid.Row="0" Grid.ColumnSpan="2" Background="{StaticResource FondoVentanaLateral1}">
+
+                <Grid Background="Transparent">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="40"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="ButtonAPMinimize" Background="Transparent" Grid.Column="3" BorderBrush="Transparent" Click="ButtonAPMinimize_Click">
+                        <Image Source="/Imagenes/minus-sign.png" Stretch="Uniform" VerticalAlignment="Center" Width="20" Height="20"/>
+                    </Button>
+
+
+                    <Button x:Name="ButtonAPClose" Background="Transparent" Grid.Column="4" BorderBrush="Transparent" Click="ButtonAPClose_Click">
+                        <Image Source="/Imagenes/cancel.png" Stretch="Uniform" VerticalAlignment="Center" Width="20" Height="20"/>
+                    </Button>
+
+                </Grid>
+
+            </Border>
+
+            <!-- Sección botones para añadir el proceso -->
+
+            <Border x:Name="bordeAñadir" Grid.Row="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <ComboBox Name="comboPartidos" Grid.Row="0" Margin="30" Background="{StaticResource FondoComboBox}">
+                        <ComboBoxItem Content="PP" Foreground="Blue" Background="{StaticResource FondoComboBox}"/>
+                        <ComboBoxItem Content="PSOE" Foreground="Red" Background="{StaticResource FondoComboBox}"/>
+                        <ComboBoxItem Content="VOX" Foreground="Green" Background="{StaticResource FondoComboBox}"/>
+                        <ComboBoxItem Content="SUMAR" Foreground="Pink" Background="{StaticResource FondoComboBox}"/>
+                        <ComboBoxItem Content="ERC" Foreground="Yellow" Background="{StaticResource FondoComboBox}"/>
+                        <ComboBoxItem Content="JUNTS" Foreground="Turquoise" Background="{StaticResource FondoComboBox}"/>
+                        <ComboBoxItem Content="EH_BILDU" Foreground="GreenYellow" Background="{StaticResource FondoComboBox}"/>
+                        <ComboBoxItem Content="EAJ_PNV" Foreground="MediumVioletRed" Background="{StaticResource FondoComboBox}"/>
+                        <ComboBoxItem Content="BNG" Foreground="CornflowerBlue" Background="{StaticResource FondoComboBox}"/>
+                        <ComboBoxItem Content="CCA" Foreground="ForestGreen" Background="{StaticResource FondoComboBox}"/>
+                        <ComboBoxItem Content="UPN" Foreground="DarkBlue" Background="{StaticResource FondoComboBox}"/>
+                        <ComboBoxItem Content="PODEMOS" Foreground="Purple" Background="{StaticResource FondoComboBox}"/>
+                        <ComboBoxItem Content="CS" Foreground="Orange" Background="{StaticResource FondoComboBox}"/>
+                        <ComboBoxItem Content="MASPAIS" Foreground="LightPink" Background="{StaticResource FondoComboBox}"/>
+                        <ComboBoxItem Content="CUP_PR" Foreground="LightSalmon" Background="{StaticResource FondoComboBox}"/>
+                        <ComboBoxItem Content="XAV" Foreground="Gold" Background="{StaticResource FondoComboBox}"/>
+                        <ComboBoxItem Content="SY" Foreground="Brown" Background="{StaticResource FondoComboBox}"/>
+                        <ComboBoxItem Content="UPL" Foreground="Khaki" Background="{StaticResource FondoComboBox}"/>
+                    </ComboBox>
+
+                    <TextBox x:Name="txtNumero" Grid.Row="1" Width="140" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                             Text="Escribe aqui los escaños" TextAlignment="Center" GotFocus="TxtNumero_GotFocus"/>
+                </Grid>
+            </Border>
+            
+            <!-- Sección botones de confirmación -->
+
+            <Border x:Name="bordeBotones" Grid.Row="2">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="Confirmar" Grid.Column="0" Click="Confirmar_Click"  Margin="10"
+                    Content="Confirmar" IsDefault="True"/>
+                    <Button x:Name="Cancelar" Grid.Column="1" Click="Cancelar_Click"  Margin="10"
+                    Content="Cancelar" IsCancel="True"/>
+                </Grid>
+            </Border>
+
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,127 @@
+﻿<Window x:Class="TrabajoFinal_ELPACTOMETRO.ModoPactometro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrabajoFinal_ELPACTOMETRO"
+        mc:Ignorable="d"
+        Background="Transparent" MouseDown="Window_MouseDown" 
+        AllowsTransparency="True" WindowStyle="None"
+        Title="Pactometro" Height="500" Width="500">
+    
+    <Border BorderBrush="{StaticResource BordeVentanas}" BorderThickness="2"
+    Background="{StaticResource FondoPactometro}"
+    CornerRadius="3">
+
+        <Grid x:Name="ventanaPrincipal">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="300" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+
+            <!-- Barra lateral -->
+
+            <Border Name="barraTitulo" Grid.Row="0" Grid.ColumnSpan="2" Background="{StaticResource FondoVentanaLateral1}">
+
+                <Grid Background="Transparent">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="40"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <Button Name="ButtonMinimize" Background="Transparent" Grid.Column="2" BorderBrush="Transparent" Click="ButtonMinimizePC_Click">
+                        <Image Source="/Imagenes/minus-sign.png" Stretch="Uniform" VerticalAlignment="Center" Width="20" Height="20"/>
+                    </Button>
+
+                    <Button Name="ButtonFScreen" Background="Transparent" Grid.Column="3" BorderBrush="Transparent" Click="ButtonFScreenPC_Click">
+                        <Image Source="/Imagenes/maximize.png" Stretch="Uniform" VerticalAlignment="Center" Width="20" Height="20"/>
+                    </Button>
+
+                    <Button Name="ButtonClose" Background="Transparent" Grid.Column="4" BorderBrush="Transparent" Click="ButtonClosePC_Click">
+                        <Image Source="/Imagenes/cancel.png" Stretch="Uniform" VerticalAlignment="Center" Width="20" Height="20"/>
+                    </Button>
+
+                </Grid>
+
+            </Border>
+
+            <!-- Sección listado de partidos -->
+            
+            <Border Name="bordeInformacion" Grid.Row="2">
+                <Grid x:Name="gridInformacion">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <ListView Name="TablaPartidos1" FontFamily="Georgia" 
+                              ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.Row="1" Grid.ColumnSpan="2" 
+                              SelectionChanged="TablaPartidos1_SelectionChanged" MouseDoubleClick="TablaPartidos1_MouseDoubleClick">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn  Width="125" DisplayMemberBinding="{Binding NombrePartido}">
+                                    <GridViewColumnHeader Tag="nombrePaP" HorizontalAlignment="Center"
+                                                          Content="PARTIDOS A FAVOR" Name="tipoProceso"/>
+                                </GridViewColumn>
+                                <GridViewColumn Width="125" DisplayMemberBinding="{Binding EscañosPartido}">
+                                    <GridViewColumnHeader Tag="escañosPaP" HorizontalAlignment="Center"
+                                                          Content="ESCAÑOS" Name="fechaProcesos"/>
+                                </GridViewColumn>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+
+                    <ListView Name="TablaPartidos2"  FontFamily="Georgia" 
+                              ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.Column ="1"
+                              SelectionChanged="TablaPartidos2_SelectionChanged" MouseDoubleClick="TablaPartidos2_MouseDoubleClick">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn  Width="150" DisplayMemberBinding="{Binding NombrePartido}">
+                                    <GridViewColumnHeader Tag="nombrePaP" HorizontalAlignment="Center"
+                                      Content="PARTIDOS EN CONTRA" Name="tipoProcesoAComparar"/>
+                                </GridViewColumn>
+                                <GridViewColumn Width="100" DisplayMemberBinding="{Binding EscañosPartido}">
+                                    <GridViewColumnHeader Tag="escañosPaP" HorizontalAlignment="Center"
+                                      Content="ESCAÑOS" Name="fechaProcesosAComparar"/>
+                                </GridViewColumn>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    
+                </Grid>
+            </Border>
+
+            <!-- Sección títulos y botones -->
+
+            <Border Name="bordePresentacion" Grid.Row="1" Background="{StaticResource FondoVentanaPresentacionPactometro}">
+                <TextBlock x:Name="textoPactometro" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
+            </Border>
+
+            <Border Name="bordeRecuento" Grid.Row="3" Background="{StaticResource FondoVentanaPresentacionPactometro}" Margin="5" BorderBrush="Black" BorderThickness="1" CornerRadius="10">
+                <Grid x:Name="gridRecuentos">
+                    
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock x:Name ="Escaños1" Grid.Column="0" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name ="Escaños2" Grid.Column="1" HorizontalAlignment="Center"/>
+
+                </Grid>
+            </Border>
+
+            <Button x:Name="MoverATabla2" Content="CAMBIAR A TABLA 2" Width="150" Height ="50" Grid.Row="4" HorizontalAlignment="Left" Margin="10" IsEnabled="False" Click="MoverATabla2_Click"/>
+            <Button x:Name="MoverATabla1" Content="CAMBIAR A TABLA 1" Width="150" Height ="50" Grid.Row="4" HorizontalAlignment="Right" Margin="10" IsEnabled="False" Click="MoverATabla1_Click"/>
+            <Button x:Name="GenerarPactometro" Content="GENERAR GRÁFICO" Width="150" Height ="50" Grid.Row="4" HorizontalAlignment="Center" Margin="10" IsEnabled="False" Click="GenerarPactometro_Click"/>
+
+        </Grid>
+    </Border>
+</Window>
